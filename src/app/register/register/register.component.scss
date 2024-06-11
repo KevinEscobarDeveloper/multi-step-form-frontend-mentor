@@ -1,0 +1,38 @@
+body {
+    background-color: brown;
+    z-index: 2;
+}
+.container {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    background: url("../../../assets/bg-intro-desktop.png") rgba(255, 121, 121, 255);
+
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "text" "form";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 100%);
+}
+
+.container .container__info {
+    color: white;
+    font-weight: bold;
+    grid-area: text;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem 0 5rem;
+    width: 60%;
+    gap: 1.5rem;
+}
+.container .container:nth-child(2) {
+    grid-area: form;
+}
+h2{
+    font-size: 3.5rem;
+}
